@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #usage:
-# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/installkubectl.sh | sh
+# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/installkubectl.sh | bash
 
 sudo yum install bash-completion
 
@@ -29,7 +29,7 @@ rm -rf ~/.helm
 
 sudo rm -rf /usr/local/bin/helm
 
-curl https://raw.githubusercontent.com/helm/helm/master/scripts/get > get_helm.sh
+curl -LO https://git.io/get_helm.sh
 
 chmod 700 get_helm.sh
 
