@@ -21,15 +21,17 @@ sudo yum -y install https://download.docker.com/linux/centos/7/x86_64/stable/Pac
 
 sudo yum -y install docker-ce-19.03.3 docker-ce-cli-19.03.3
 
+sudo usermod -a -G docker $USER
+
 sudo systemctl enable docker
 
 sudo systemctl start docker
 
-sudo usermod -a -G docker $USER
+#sudo systemctl restart docker
+
+sudo su - $USER
+
+exit
 
 # doing this to avoid logout/login
 sudo chmod 666 /var/run/docker.sock
-
-#sudo su - $USER
-
-#exit
