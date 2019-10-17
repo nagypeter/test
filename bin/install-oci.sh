@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #usage:
-# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/installoci.sh | bash
+# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/install-oci.sh | bash
 
 echo "Install OCI CLI"
 

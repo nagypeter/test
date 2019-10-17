@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #usage:
-# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/installdocker.sh | bash
+# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/install-docker.sh | bash
 
 
 sudo yum -y remove docker-ce \

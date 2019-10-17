@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #usage:
-# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/installkubectl.sh | bash
+# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/bin/install-kubectl.sh | bash
 
 sudo yum install bash-completion
 
