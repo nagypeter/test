@@ -12,7 +12,6 @@ export BRANCH="2.0"
 export GITLOCALFOLDER="weblogic-kubernetes-operator"
 export CONTENT_DIR="/u01/content/"
 
-
 # if /u01 doesn't exist
 if [ ! -e "/u01" ]; then
   echo "Creating /u01 folder"
@@ -20,7 +19,7 @@ if [ ! -e "/u01" ]; then
   sudo chown oracle:oracle /u01
 fi
 
-mkdir -p /u01/$GITLOCALFOLDER
+mkdir -p $CONTENT_DIR/$GITLOCALFOLDER
 
 #clean, if script runs more
 rm -rf $CONTENT_DIR/$GITLOCALFOLDER
