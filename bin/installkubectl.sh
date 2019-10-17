@@ -19,6 +19,8 @@ sudo mv ./kubectl /usr/local/bin/kubectl
 
 echo 'source <(kubectl completion bash)' >>~/.bashrc
 
+. ~/.bashrc
+
 echo "========================================"
 
 echo "Install Helm..."
