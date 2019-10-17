@@ -27,11 +27,9 @@ sudo systemctl enable docker
 
 sudo systemctl start docker
 
-#sudo systemctl restart docker
-
 sudo su - $USER
 
 exit
 
-# doing this to avoid logout/login
+# DON'T DO IN PRODUCTION. It's ugly solution to use docker without logout/login
 sudo chmod 666 /var/run/docker.sock
