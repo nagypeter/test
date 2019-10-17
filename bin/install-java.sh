@@ -22,4 +22,4 @@ else
     echo "~/.bashrc now contains JAVA_HOME settings"
 fi
 
-export JAVA_HOME=$(readlink -f /usr/bin/java | sed "s:bin/java::")
+. ~/.bashrc
