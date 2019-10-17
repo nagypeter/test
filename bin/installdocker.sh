@@ -25,12 +25,10 @@ sudo systemctl enable docker
 
 sudo systemctl start docker
 
-# doing this to avoid logout/login
-sudo chmod 666 /var/run/docker.sock
-
 sudo usermod -a -G docker $USER
 
-sudo systemctl restart docker
+# doing this to avoid logout/login
+sudo chmod 666 /var/run/docker.sock
 
 #sudo su - $USER
 
