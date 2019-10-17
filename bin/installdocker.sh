@@ -27,6 +27,9 @@ sudo systemctl start docker
 
 sudo usermod -a -G docker $USER
 
+sudo systemctl restart docker
+
 sudo su - $USER
+
 
 exit
