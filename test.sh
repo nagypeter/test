@@ -19,8 +19,4 @@ echo "Setup is complete for WebLogic Kubernetes Operator Workshop."
 
 read -p "Press [Enter] to close the window"
 
-exit
-
-exit
-
-#kill -9 $var
+kill -9 $var
