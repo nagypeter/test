@@ -1,10 +1,26 @@
 #!/bin/bash
 
 #usage:
-# curl -LSs https://raw.githubusercontent.com/nagypeter/test/master/test.sh | bash
+# bash <(curl -s https://raw.githubusercontent.com/nagypeter/test/master/test.sh)
 
 echo "Setup environment for WebLogic Kubernetes Operator Workshop..."
 
-echo "do some stuff"
+curl -LSs https://raw.githubusercontent.com/nagypeter/vmcontrol/master/scripts/install-docker.sh | bash
 
-read -p "Setup complete for WebLogic Kubernetes Operator Workshop. Press [Enter] to close the window"
+curl -LSs https://raw.githubusercontent.com/nagypeter/vmcontrol/master/scripts/install-oci.sh | bash
+
+curl -LSs https://raw.githubusercontent.com/nagypeter/vmcontrol/master/scripts/install-kubectl.sh | bash
+
+curl -LSs https://raw.githubusercontent.com/nagypeter/vmcontrol/master/scripts/install-git.sh | bash
+
+curl -LSs https://raw.githubusercontent.com/nagypeter/vmcontrol/master/scripts/clone-weblogic-kubernetes-operator.sh | bash
+
+echo "Setup is complete for WebLogic Kubernetes Operator Workshop."
+
+read -p "Press [Enter] to close the window"
+
+exit
+
+exit
+
+#kill -9 $var
